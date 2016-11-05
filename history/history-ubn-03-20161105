@@ -1,0 +1,97 @@
+    1   
+    2  less .bash_history 
+    3  cp .bash_history .bash_history.old
+    4  echo " " > .bash_history
+    5  less .bash_history
+    6  history
+    7  cd LXS2_lsh
+    8  ls
+    9  history
+   10  history > file
+   11  ls
+   12  cat file
+   13  rm file
+   14  echo $HOSTNAME
+   15  PWD
+   16  pwd
+   17  history > history/history-$HOSTNAME
+   18  tree
+   19  date +%Y%m%d
+   20  history > history/history-$HOSTNAME`date +%Y%m%d`
+   21  sudo apt-get update ; sudo apt-get install tree
+   22  tree
+   23* 
+   24  ip -4 addr
+   25  netstat -latunp
+   26  netstat -latunp | grep 22
+   27  sudo apt-get update ; sudo apt-get install tree
+   28  tree
+   29  rm history/history-ubn-03
+   30  rm history/history-ubn-0020161105
+   31  ls
+   32  cd history
+   33  ls
+   34  rm history-ubn-0320161105 
+   35  cd ..
+   36  touch src/.gitignore
+   37  tree
+   38  touch .gitignore
+   39  ls -a
+   40  echo "*~" > .gitignore
+   41  echo "*.swp" >> .gitignore
+   42  cat .gitignore
+   43  sudo apt-get insall git
+   44  git init
+   45  sudo apt-get insall git
+   46  sudo apt-get install git
+   47  git init
+   48  tree
+   49  git init
+   50  cd ..
+   51  tree
+   52  cd LXS2.lsh
+   53  cd LXS2_lsh
+   54  ls
+   55  git init
+   56  cd .git
+   57  tree
+   58  ls -a
+   59  cd ..
+   60  ls
+   61  ls -a
+   62  nano .gitconfig
+   63  cat .gitconfig
+   64  cd LXS2_lsh
+   65  ls
+   66  git status
+   67  ls -a
+   68  cp .gitconfig ~
+   69  cd
+   70  ls -la
+   71  ls -a
+   72  history
+   73  git status
+   74  history
+   75  ls 
+   76  cd LXS2_lsh
+   77  ls 
+   78  ls -a
+   79  cd 
+   80  ls -a
+   81  cd -
+   82  git status
+   83  git rm .gitconfig
+   84  git status
+   85  ls -a
+   86  rm .gitconfig
+   87  git status
+   88  history > history/history-$HOSTNAME-`
+   89  #history > history/history-$HOSTNAME-`
+   90  tree
+   91  cd history
+   92  ls -a
+   93  cd
+   94  ls -a
+   95  cd -
+   96  cd ..
+   97  history > history/history-$HOSTNAME-`date +%Y%m%d`
