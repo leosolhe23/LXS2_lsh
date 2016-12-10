@@ -1,5 +1,17 @@
 #/bin/bash
 
+### Variables globales
+DISTRO=$1
+
+
+### Funciones
+
+informaciones ()
+
+
+{}
+
+
 case $DISTRO in 
 	ubuntu)
 	echo "Distro ubuntu Soportada"
