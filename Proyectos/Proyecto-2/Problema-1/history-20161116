@@ -1,0 +1,66 @@
+    1  ls
+    2  pwd
+    3  cd Documents
+    4  cd problma
+    5  cd problema1
+    6  ls
+    7  cd hojasDatos
+    8  ls
+    9  pwd
+   10  version
+   11  which yum
+   12  sudo rpm -Uhv http://packages.sw.be/rpmforge-release/rpmforge-release-0.5.2-2el6.rf.x86_64.rpm
+   13  sudo yum update
+   14  ifconfig
+   15  ping 172.31.70.7
+   16  sudo rpm -Uhv http://packages.sw.be/rpmforge-release/rpmforge-release-0.5.2-2el6.rf.x86_64.rpm
+   17  clear
+   18  sudo rpm -Uhv http://packages.sw.be/rpmforge-release/rpmforge-release-0.5.2-2el6.rf.x86_64.rpm
+   19  sudo rmp xls2csv
+   20  sudo yum xls2csv
+   21  sudo rpm -Uhv http://packages.sw.be/rpmforge-release/rpmforge-release-0.5.2-2el6.rf.x86_64.rpm
+   22  ping mirrorlist.centos.org
+   23  ping 172.31.70.7
+   24  ping mirrorlist.centos.org
+   25  sudo rpm -Uhv http://packages.sw.be/rpmforge-release/rpmforge-release-0.5.2-2el6.rf.x86_64.rpm
+   26  sudo yum update
+   27  sudo rpm -Uhv http://packages.sw.be/rpmforge-release/rpmforge-release-0.5.2-2el6.rf.x86_64.rpm
+   28  sudo rpm -Uhv http://packages.sw.be/repoforge-release/repoforge-release-0.5.2-2el6.rf.x86_64.rpm
+   29  sudo rpm -Uhv http://www.packages.sw.be/repoforge-release/repoforge-release-0.5.2-2el6.rf.x86_64.rpm
+   30  sudo yum insall catdoc
+   31  sudo yum install catdoc
+   32  sudo wget http://download.opensuse.org/repositories/home:csbuild:centosextra/CentOS_CentOS-6/home:csbuild:centosextra.repo
+   33  yum install catdoc
+   34  which catdoc
+   35  pwd
+   36  ls
+   37  cd problema1
+   38  ls
+   39  cd hojasDatos
+   40  ls
+   41  wich xls2csv
+   42  which xls2csv
+   43  which catdoc
+   44  wget http://download.opensuse.org/repositories/home:csbuild:centosextra/CentOS_CentOS-6/home:csbuild:centosextra.repo
+   45  yum install catdoc
+   46  sudo yum install catdoc
+   47  sudo rpm -Uhv  https://forensics.cert.org/cert-forensics-tools-release-el7.rpm
+   48  cd ..
+   49  which catdoc
+   50  which xls2csv
+   51  sudo rpm -Uhv  https://forensics.cert.org/cert-forensics-tools-release-el7.rpm
+   52  rpm -Uvh cert-forensics-tools-release*rpm
+   53  yum --enablerepo=forensics install catdoc
+   54  sudo yum --enablerepo=forensics install catdoc
+   55  which catdoc
+   56  which xls2csv
+   57  history
+   58  # hasta aqui se pudo instalar catdoc y xls2csv usuando el paquete de forensics-tools  cert.org
+   59  # el comando: sudo rpm -Uhv http://packages.sw.be/rpmforge-release/rpmforge-release-0.5.2-2el6.rf.x86_64.rpm  no se puede ejecutar
+   60  which xls2csv
+   61  pwd
+   62  cd..
+   63  cd ..
+   64  pwd
+   65  fecha=$(date +%Y%m%d)
+   66  history > history-$fecha

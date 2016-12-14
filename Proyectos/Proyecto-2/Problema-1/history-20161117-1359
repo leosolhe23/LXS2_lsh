@@ -1,0 +1,171 @@
+    1  ls
+    2  pwd
+    3  cd Documents
+    4  cd problma
+    5  cd problema1
+    6  ls
+    7  cd hojasDatos
+    8  ls
+    9  pwd
+   10  version
+   11  which yum
+   12  sudo rpm -Uhv http://packages.sw.be/rpmforge-release/rpmforge-release-0.5.2-2el6.rf.x86_64.rpm
+   13  sudo yum update
+   14  ifconfig
+   15  ping 172.31.70.7
+   16  sudo rpm -Uhv http://packages.sw.be/rpmforge-release/rpmforge-release-0.5.2-2el6.rf.x86_64.rpm
+   17  clear
+   18  sudo rpm -Uhv http://packages.sw.be/rpmforge-release/rpmforge-release-0.5.2-2el6.rf.x86_64.rpm
+   19  sudo rmp xls2csv
+   20  sudo yum xls2csv
+   21  sudo rpm -Uhv http://packages.sw.be/rpmforge-release/rpmforge-release-0.5.2-2el6.rf.x86_64.rpm
+   22  ping mirrorlist.centos.org
+   23  ping 172.31.70.7
+   24  ping mirrorlist.centos.org
+   25  sudo rpm -Uhv http://packages.sw.be/rpmforge-release/rpmforge-release-0.5.2-2el6.rf.x86_64.rpm
+   26  sudo yum update
+   27  sudo rpm -Uhv http://packages.sw.be/rpmforge-release/rpmforge-release-0.5.2-2el6.rf.x86_64.rpm
+   28  sudo rpm -Uhv http://packages.sw.be/repoforge-release/repoforge-release-0.5.2-2el6.rf.x86_64.rpm
+   29  sudo rpm -Uhv http://www.packages.sw.be/repoforge-release/repoforge-release-0.5.2-2el6.rf.x86_64.rpm
+   30  sudo yum insall catdoc
+   31  sudo yum install catdoc
+   32  sudo wget http://download.opensuse.org/repositories/home:csbuild:centosextra/CentOS_CentOS-6/home:csbuild:centosextra.repo
+   33  yum install catdoc
+   34  which catdoc
+   35  pwd
+   36  ls
+   37  cd problema1
+   38  ls
+   39  cd hojasDatos
+   40  ls
+   41  wich xls2csv
+   42  which xls2csv
+   43  which catdoc
+   44  wget http://download.opensuse.org/repositories/home:csbuild:centosextra/CentOS_CentOS-6/home:csbuild:centosextra.repo
+   45  yum install catdoc
+   46  sudo yum install catdoc
+   47  sudo rpm -Uhv  https://forensics.cert.org/cert-forensics-tools-release-el7.rpm
+   48  cd ..
+   49  which catdoc
+   50  which xls2csv
+   51  sudo rpm -Uhv  https://forensics.cert.org/cert-forensics-tools-release-el7.rpm
+   52  rpm -Uvh cert-forensics-tools-release*rpm
+   53  yum --enablerepo=forensics install catdoc
+   54  sudo yum --enablerepo=forensics install catdoc
+   55  which catdoc
+   56  which xls2csv
+   57  history
+   58  # hasta aqui se pudo instalar catdoc y xls2csv usuando el paquete de forensics-tools  cert.org
+   59  # el comando: sudo rpm -Uhv http://packages.sw.be/rpmforge-release/rpmforge-release-0.5.2-2el6.rf.x86_64.rpm  no se puede ejecutar
+   60  which xls2csv
+   61  pwd
+   62  cd..
+   63  cd ..
+   64  pwd
+   65  fecha=$(date +%Y%m%d)
+   66  history > history-$fecha
+   67  ls
+   68  # referencia para instalacion de catdoc:   https://pkgs.org/centos-7/forensics-x86_64/catdoc-0.94.2-6el7x68_64.rpm.html
+   69  # referencia para instalacion de catdoc:   https://pkgs.org/centos-7/forensics-x86_64/catdoc-0.94.2-6.el7.x68_64.rpm.html
+   70  # referencia correcta : https://pkgs.org/centos-7/forensics-x86_64/catdoc-0.94.2-6.el7.x86_64.rpm.html
+   71  pw
+   72  owd
+   73  pwd
+   74  ls
+   75  cd problema1
+   76  ls
+   77  cd hojasDatos
+   78  ls
+   79  xls2csv datos1.xls >>  prueba1csv
+   80  ls
+   81  rm prueba1csv
+   82  xls2csv datos1.xls >>  prueba1.csv
+   83  less prueba1.csv 
+   84  pwd
+   85  cd ..
+   86  pwd
+   87  vim problema1.sh
+   88  ls
+   89  chmod 744 problema1.sh
+   90  ./problema1.sh
+   91  ls
+   92  cd hojasDatos
+   93  ls
+   94  cd ..
+   95  ls
+   96  cd Datos
+   97  cd hojasDatos
+   98  ls
+   99  rm prueba1.dsv
+  100  rm prueba1.csv
+  101  ls
+  102  cd ..
+  103  ls
+  104  vim problema1.sh
+  105  ls
+  106  ls -la
+  107  ./problema1.sh
+  108  ls
+  109  cd hojasDatos
+  110  ls
+  111  ls -la
+  112  cd archivos_csv
+  113  pwd
+  114  cd ..
+  115  pwd
+  116  cd Documents
+  117  ls
+  118  cd ..
+  119  ls
+  120  cd Documents
+  121  ls
+  122  rm -R problema1
+  123  ls
+  124  cd problema1
+  125  ls
+  126  cd hojasDatos
+  127  ls
+  128  rm  home\:csbuild\:centosextra.repo 
+  129  ls
+  130  cd ..
+  131  ls
+  132  ./problema1.sh 
+  133  ls
+  134  cd hojasDatos
+  135  ls
+  136  cd archivos_csv
+  137  ls
+  138  less data-3.csv 
+  139  shutdown now
+  140  pwd
+  141  ls
+  142  pwd
+  143  ls
+  144  cd Documents
+  145  ls
+  146  cd problema1
+  147  rpm insall git
+  148  sudo yum install git
+  149  date
+  150  #instalacion de github y creacion del repo
+  151  # se va a subir la primera version 
+  152  # hasta ahora se ha instalado git, catdoc xls2csv  y tambien se hizo el script y corrio adecuadamente la unica correccion que se hizo es mkdir$DATA/archivos_csv
+  153  timest=$(date +%Y:%m%d:%h)
+  154  echo timest
+  155  echo $timest
+  156  timest=$(date +%Y:%m:%d:%H)
+  157  echo $timest
+  158  timest=$(date +%Y/%m/%d-%H:%M)
+  159  echo $timest
+  160  history>history-$timest
+  161  echo $timest
+  162  history > history-$timest
+  163  ls
+  164  echo $timest
+  165  touch history-$timest
+  166  timest=$(date +%Y/%m/%d-%H%M)
+  167  history > history-$timest
+  168  echo $timest
+  169  timest=$(date +%Y%m%d-%H%M)
+  170  echo $timest
+  171  history > history-$timest
