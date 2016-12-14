@@ -1,0 +1,106 @@
+
+Trabajo de investigación LVM
+Curso Administracion de servidores GNU/LINUX
+Academia de Tecnología UCR
+Alumno: Leonardo Solano Herrera
+Profesor: Emanuel Vargas.
+
+*** Entregable ***** 
+
+Comandos.
+
+Nombre del host :  CentOS
+Nombre del volumen group : centos
+Particion swap:   /dev/mapper/centos-swap
+Logical volumen:  /dev/centos/swap
+
+Comandos utilizados
+
+df -h
+sudo fdisk -l
+swapon -s
+
+Para lograr la salida de los comandos display
+
+lvdisplay
+vgdisplay
+pvdisplay
+
+*  Particionamiento del disco adicional agregado a la máquina.      
+sudo fdisk -l              : para saber el nombre como se refiere el nuevo disco:   /dev/sdb
+sudo fdisk /dev/sdb        : para trabajar el particionamiento del disco /dev/sdb
+
+Opciones de fdisk
+n      p     1      t       8e
+
+*Crear el nuevo volumen físico para luego agregarlo al grupo de volumen creado por defecto centos
+
+sudo su -                      (se debe accesar como Root )
+pvcreate /dev/sdb1             (para crear el physical volumen)
+pvdisplay
+
+*Extender el  volumen group centos con el pv recien creado 
+vgexteand   centos /dev/sdb1
+vgdisplay
+
+*Extender el volumen lógico de swap en 200MB
+
+*Desabilitar el swapping al  del volumen lógico swap
+swapoff  /dev/centos/swap
+
+*Ajustar el tamaño incrementando en 200 megas
+
+lvm  lvresize   /dev/centos/swap -L +200M
+Formatear el Nuevo espacio swap
+mkswap -c  /dev/centos/swap
+
+
+*resize  para que la tabla detecte el nuevo espacio.
+e2fsck  -f  /dev/centos/swap
+resize2fs /dev/centos/swap
+
+*Habilitar las particiones swap acutles y que el sistema pueda utilizarlas.f
+swapon -va
+
+
+
+Pregunta Extra
+***  Root  ***
+Extender la particion root
+
+Usamos los comandos display de lvm para mostrar la configuracion original (antes del extendido)
+
+
+
+Para extender la particion /dev/mapper/centos-root se debe montar en la unidad de disco una imagen Centos live 
+o entrar en troubleshooting  / Rescue Centos  / Skip / enter  para poder acceder al bash.
+
+Como ya tenemos el volume group y este aun tiene espacio disponible lo que se hace es:
+
+** Extender particion volumen logico /dev/centos/root  **
+
+lvextend -L +512M /dev/centos/lv -r
+
+*Para montar la particion
+
+mkdir  /mnt/configs
+mount /dev/mapper/centos-root /mnt/configs
+df -lh
+umount /mnt/configs
+
+* Hacemos el resize
+resize2fs /dev/centos/root
+mount /dev/mapper/centos-root /mnt/configs
+
+df -lh
+Aqui podemos observar los resultados 
+
+Procedemos nuevamente con los comandos display de lvm
+Ver* archivos png y jpg
+
+Fin.
+
+
+
+
+ 
